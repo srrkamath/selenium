@@ -13,7 +13,7 @@ public class ActitimeLoginTest
 	public void Login() throws InterruptedException
 	{
 		HelperUtils hu = new HelperUtils();
-		WebDriver driver=hu.openBrowser("firefox", "https://demo.actitime.com/login.do");
+		WebDriver driver=hu.openBrowser("chrome", "https://demo.actitime.com/login.do");
 		ActitimeLoginPage loginpage = PageFactory.initElements(driver, ActitimeLoginPage.class);
 		loginpage.logintoActitime("admin", "manager");
 		driver.wait(5000);

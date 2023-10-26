@@ -15,7 +15,7 @@ public class HelperUtils {
 		}
 		else if(browsername.equalsIgnoreCase("firefox"))
 		{
-			driver = new FirefoxDriver();
+		driver = new FirefoxDriver();
 		}
 		
 		driver.manage().window().maximize();
