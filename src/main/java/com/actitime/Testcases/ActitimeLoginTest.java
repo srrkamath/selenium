@@ -14,8 +14,8 @@ public class ActitimeLoginTest
 	{
 		HelperUtils hu = new HelperUtils();
 		WebDriver driver=hu.openBrowser("chrome", "https://demo.actitime.com/login.do");
-		ActitimeLoginPage loginpage = PageFactory.initElements(driver, ActitimeLoginPage.class);
-		loginpage.logintoActitime("admin", "manager");
+		//ActitimeLoginPage loginpage = PageFactory.initElements(driver, ActitimeLoginPage.class);
+		//loginpage.logintoActitime("admin", "manager");
 		//driver.wait(5000);
 		//driver.close();
 		
