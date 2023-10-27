@@ -130,29 +130,9 @@
                   <a name="Login">
                   </a> <!-- Login -->
                   <span class="method-name">Login</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: &apos;DESKTOP-DN6VNKM&apos;, ip: &apos;192.168.56.1&apos;
-Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:156)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:151)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
-	at com.actitime.Helper.HelperUtils.openBrowser(HelperUtils.java:18)
-	at com.actitime.Testcases.ActitimeLoginTest.Login(ActitimeLoginTest.java:16)
+                  <div class="stack-trace">java.lang.IllegalMonitorStateException: current thread is not owner
+	at java.base/java.lang.Object.wait(Native Method)
+	at com.actitime.Testcases.ActitimeLoginTest.Login(ActitimeLoginTest.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -216,12 +196,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'com.actitime.Testcases.ActitimeLoginTest')
-data.setCell(0, 3, 38855);
+data.setCell(0, 3, 9224);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->

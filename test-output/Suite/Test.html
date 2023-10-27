@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 26 20:55:38 IST 2023</td>
+<td>Started on:</td><td>Fri Oct 27 00:20:14 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>38 seconds (38921 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9304 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,54 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.actitime.Testcases.ActitimeLoginTest.Login()'><b>Login</b><br>Test class: com.actitime.Testcases.ActitimeLoginTest</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: &apos;DESKTOP-DN6VNKM&apos;, ip: &apos;192.168.56.1&apos;
-Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:156)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:151)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
-	at com.actitime.Helper.HelperUtils.openBrowser(HelperUtils.java:18)
-	at com.actitime.Testcases.ActitimeLoginTest.Login(ActitimeLoginTest.java:16)
+<td><div><pre>java.lang.IllegalMonitorStateException: current thread is not owner
+	at java.base/java.lang.Object.wait(Native Method)
+	at com.actitime.Testcases.ActitimeLoginTest.Login(ActitimeLoginTest.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace669725336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace669725336'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: &apos;DESKTOP-DN6VNKM&apos;, ip: &apos;192.168.56.1&apos;
-Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:156)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:151)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:132)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:127)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:112)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:102)
-	at com.actitime.Helper.HelperUtils.openBrowser(HelperUtils.java:18)
-	at com.actitime.Testcases.ActitimeLoginTest.Login(ActitimeLoginTest.java:16)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1075082007", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1075082007'><pre>java.lang.IllegalMonitorStateException: current thread is not owner
+	at java.base/java.lang.Object.wait(Native Method)
+	at com.actitime.Testcases.ActitimeLoginTest.Login(ActitimeLoginTest.java:19)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,7 +113,7 @@ Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: tru
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>38</td>
+<td>9</td>
 <td>com.actitime.Testcases.ActitimeLoginTest@18d87d80</td></tr>
 </table><p>
 </body>

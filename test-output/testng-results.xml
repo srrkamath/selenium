@@ -2,45 +2,20 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-26T20:55:38 IST" name="Suite" finished-at="2023-10-26T20:56:17 IST" duration-ms="38921">
+  <suite started-at="2023-10-27T00:20:14 IST" name="Suite" finished-at="2023-10-27T00:20:24 IST" duration-ms="9304">
     <groups>
     </groups>
-    <test started-at="2023-10-26T20:55:38 IST" name="Test" finished-at="2023-10-26T20:56:17 IST" duration-ms="38921">
+    <test started-at="2023-10-27T00:20:14 IST" name="Test" finished-at="2023-10-27T00:20:24 IST" duration-ms="9304">
       <class name="com.actitime.Testcases.ActitimeLoginTest">
-        <test-method signature="Login()[pri:0, instance:com.actitime.Testcases.ActitimeLoginTest@18d87d80]" started-at="2023-10-26T20:55:38 IST" name="Login" finished-at="2023-10-26T20:56:17 IST" duration-ms="38855" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="Login()[pri:0, instance:com.actitime.Testcases.ActitimeLoginTest@18d87d80]" started-at="2023-10-27T00:20:14 IST" name="Login" finished-at="2023-10-27T00:20:24 IST" duration-ms="9224" status="FAIL">
+          <exception class="java.lang.IllegalMonitorStateException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'DESKTOP-DN6VNKM', ip: '192.168.56.1'
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]]]>
+              <![CDATA[current thread is not owner]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'DESKTOP-DN6VNKM', ip: '192.168.56.1'
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: C:\Program Files\Mozilla Fi...}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:156)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:151)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at com.actitime.Helper.HelperUtils.openBrowser(HelperUtils.java:18)
-at com.actitime.Testcases.ActitimeLoginTest.Login(ActitimeLoginTest.java:16)
+              <![CDATA[java.lang.IllegalMonitorStateException: current thread is not owner
+at java.base/java.lang.Object.wait(Native Method)
+at com.actitime.Testcases.ActitimeLoginTest.Login(ActitimeLoginTest.java:19)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -71,7 +46,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
